@@ -1,0 +1,11 @@
+Transformational AI: Analyzing Ecommerce Large Datasets for Machine Learning
+Completed by: Tim Wilcoxson
+—————————————-
+
+Question 1: The data has columns like rating, title, text, images, asin, parent_asin, user_id, timestamp, and verified_purchase. Most of the columns are object types (strings), with rating being a number. Each row is one review for a specific product, and the asin column ties the review to a product.
+Question 2: It was a little different from what I expected. The .head() output is plain text and some of the columns got cut off, so it was harder to read compared to the HTML table we saw before. But I can see how it would be handy for a quick check of the data without loading everything.
+Question 3: We changed a few pandas display settings with pd.set_option. We set max_columns to None so nothing gets hidden, bumped up the width to 1000, and set max_colwidth to 50. That way the output shows all the columns on one line per row instead of wrapping everywhere, which made it way easier to read.
+Question 4: The reviews dataset is about what customers said — it has the review text, their rating, and who wrote it. The metadata dataset is more about the products themselves, like the title, price, average rating, and features. They both have parent_asin so you could link them together, but they serve different purposes.
+Question 5: I think .info() was the most helpful one. It gives you a quick rundown of everything — how many entries, what the column names are, how many non-null values each column has, and the data types. It saved a lot of time compared to checking each thing separately.
+Question 6: Most of the highly rated products seem to be on the cheaper end. The bars are tallest at the lower price range and drop off as prices go up. So there are a lot more affordable products with high ratings than expensive ones, at least in this sample.
+Question 7: There doesn't seem to be a clear connection between price and rating. You can see high ratings at pretty much every price point — cheap products and expensive ones both get good scores. So price alone doesn't really tell you if a product will be rated well or not.
